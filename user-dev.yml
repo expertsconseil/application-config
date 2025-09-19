@@ -22,16 +22,3 @@ management:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
-
-
-    spring:
-  application:
-    name: user
-  profiles:
-    active:
-      - dev
-  config:
-    import: configserver:http://localhost:8001
-  cloud:
-    config:
-      profile: dev
