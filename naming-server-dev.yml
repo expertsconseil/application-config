@@ -1,0 +1,18 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: naming-server
+  boot:
+    admin:
+      client:
+        url: http://localhost:8003
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health, metrics'

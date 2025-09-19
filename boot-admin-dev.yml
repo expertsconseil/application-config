@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: boot-admin
 server:
-  port: 8002
+  port: 8003
+
 

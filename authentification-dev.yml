@@ -14,7 +14,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8002
+        url: http://localhost:8003
 management:
   endpoints:
     web:
