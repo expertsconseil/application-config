@@ -5,7 +5,7 @@ server:
   port: 8011
 spring:
   application:
-    name: user_service
+    name: user-service
   data:
     mongodb:
       uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
