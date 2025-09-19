@@ -1,0 +1,23 @@
+logging:
+  level:
+    root: info
+server:
+  port: 9012
+spring:
+  application:
+    name: quiz-generator
+    data:
+    mongodb:
+      uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
+  boot:
+    admin:
+      client:
+        url: http://localhost:9002
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health, metrics'
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
