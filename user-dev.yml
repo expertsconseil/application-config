@@ -8,7 +8,7 @@ spring:
     name: user
     data:
     mongodb:
-      uri: mongodb://maher:maher@localhost:27017/expertsconseil?authSource=admin&retryWrites=true&w=majority
+      uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
       #authentication-database: maher
   boot:
     admin:
@@ -22,3 +22,16 @@ management:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
+
+    spring:
+  application:
+    name: user
+  profiles:
+    active:
+      - dev
+  config:
+    import: configserver:http://localhost:8001
+  cloud:
+    config:
+      profile: dev
