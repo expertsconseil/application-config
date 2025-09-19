@@ -5,7 +5,7 @@ server:
   port: 9012
 spring:
   application:
-    name: quiz-generator
+    name: quiz-generator-service
     data:
     mongodb:
       uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
