@@ -4,9 +4,7 @@ logging:
 server:
   port: 9011
 spring:
-  application:
-    name: user-service
-    data:
+  data:
     mongodb:
       uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
   boot:

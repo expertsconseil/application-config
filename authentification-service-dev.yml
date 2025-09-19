@@ -4,8 +4,6 @@ logging:
 server:
   port: 8010
 spring:
-  application:
-    name: authentification-service
   data:
     mongodb:
       uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
