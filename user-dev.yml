@@ -2,11 +2,11 @@ logging:
   level:
     root: info
 server:
-  port: 8011
+  port: 8010
 spring:
   application:
     name: user
-    data:
+  data:
     mongodb:
       uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
       #authentication-database: maher
