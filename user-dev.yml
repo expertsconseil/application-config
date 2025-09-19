@@ -8,8 +8,8 @@ spring:
     name: user
     data:
     mongodb:
-      uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
-      authentication-database: maher
+      uri: mongodb://maher:maher@localhost:27017/expertsconseil?authSource=admin&retryWrites=true&w=majority
+      #authentication-database: maher
   boot:
     admin:
       client:
