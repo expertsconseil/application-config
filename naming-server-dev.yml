@@ -3,10 +3,6 @@ server:
 spring:
   application:
     name: naming-server
-  boot:
-    admin:
-      client:
-        url: http://localhost:8003
 eureka:
   client:
     register-with-eureka: false

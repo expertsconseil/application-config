@@ -13,6 +13,10 @@ spring:
     admin:
       client:
         url: http://localhost:9003
+eureka:
+  client:
+    serviceUrl:
+      defaultzZone: http://localhost:8002/eureka
 management:
   endpoints:
     web:
