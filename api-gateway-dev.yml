@@ -15,6 +15,7 @@ spring:
   cloud:
     gateway:
       discovery:
+        client: enable
         locator:
           enable: true
           lowerCaseServiceId: true
