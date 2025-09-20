@@ -17,10 +17,10 @@ spring:
       server:
         webflux:
           discovery:
-            client: enable
-            locator:
-              enable: true
-              lower-case-service-id: true
+            client: 
+              enabled: true
+              locator:
+                lower-case-service-id: true
 eureka:
   client:
     registerWithEureka: true
