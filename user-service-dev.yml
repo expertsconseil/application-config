@@ -22,7 +22,7 @@ resilience4j:
   retry:
     instances:
       sample-api:
-        maxAttempts: 10
+        maxAttempts: 5
 management:
   endpoints:
     web:
