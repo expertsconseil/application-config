@@ -2,7 +2,7 @@ logging:
   level:
     root: info
 server:
-  port: 9011
+  port: 9012
 spring:
   data:
     mongodb:
