@@ -12,6 +12,12 @@ spring:
     admin:
       client:
         url: http://localhost:8003
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enable: true
+          lowerCaseServiceId: true
 eureka:
   client:
     registerWithEureka: true
