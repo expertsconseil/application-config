@@ -14,11 +14,13 @@ spring:
         url: http://localhost:8003
   cloud:
     gateway:
-      discovery:
-        client: enable
-        locator:
-          enable: true
-          lowerCaseServiceId: true
+      server:
+        webflux:
+          discovery:
+            client: enable
+            locator:
+              enable: true
+              lower-case-service-id: true
 eureka:
   client:
     registerWithEureka: true
