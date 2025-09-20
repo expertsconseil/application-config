@@ -19,7 +19,7 @@ eureka:
 resilience4j:
   retry:
     instances:
-      sample-api:
+      user-service:
         maxAttempts: 5
 management:
   endpoints:
