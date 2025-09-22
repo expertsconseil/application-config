@@ -1,6 +1,6 @@
 ---
 server:
-  port: 9051
+  port: 8002
 spring:
   data:
     mongodb:
