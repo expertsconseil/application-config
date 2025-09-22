@@ -8,14 +8,3 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, metrics
-  tracing:
-    sampling:
-      probability: 1
-logging:
-  pattern:
-    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
