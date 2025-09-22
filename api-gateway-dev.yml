@@ -1,41 +1,32 @@
+---
 server:
   port: 8010
 spring:
   data:
     mongodb:
       uri: mongodb://maher:maher@localhost:27017/expertsconseil?retryWrites=true&w=majority
-      #authentication-database: maher
   boot:
     admin:
       client:
         url: http://localhost:8003
-  #cloud:
-    #gateway:
-      #server:
-        #webflux:
-          #discovery:
-            #locator:
-              #enabled: true
-              #lower-case-service-id: true
 eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-
 management:
   endpoints:
     web:
       exposure:
-        include: 'health, metrics'
+        include: health, metrics
   tracing:
     sampling:
-      probability: 1.0 
+      probability: 1
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
-    
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
