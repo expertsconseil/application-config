@@ -1,5 +1,14 @@
-spring:
-  application:
-    name: boot-admin
 server:
   port: 9003
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health, metrics'
+  tracing:
+    sampling:
+      probability: 1.0 
+logging:
+  pattern:
+    level: %5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
