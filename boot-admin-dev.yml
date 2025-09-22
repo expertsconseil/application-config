@@ -1,15 +1,14 @@
+---
 server:
   port: 8003
-
 management:
   endpoints:
     web:
       exposure:
-        include: "health, metrics"
+        include: health, metrics
   tracing:
     sampling:
-      probability: 1.0
-      
+      probability: 1
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
