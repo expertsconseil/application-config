@@ -8,7 +8,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8053
+        url: http://localhost:8003
 eureka:
   client:
     registerWithEureka: true
