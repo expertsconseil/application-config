@@ -1,6 +1,6 @@
 ---
 server:
-  port: 8002
+  port: 8761
 spring:
   application:
     name: naming-server
