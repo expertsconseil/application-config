@@ -1,3 +1,4 @@
+---
 server:
   port: 9012
 spring:
@@ -12,19 +13,17 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-
 management:
   endpoints:
     web:
       exposure:
-        include: 'health, metrics'
+        include: health, metrics
   tracing:
     sampling:
-      probability: 1.0 
+      probability: 1
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
-    
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
